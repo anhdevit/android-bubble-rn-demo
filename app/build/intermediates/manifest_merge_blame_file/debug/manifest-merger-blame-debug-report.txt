@@ -1,0 +1,185 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  Copyright (C) 2019 The Android Open Source Project
+4
+5  Licensed under the Apache License, Version 2.0 (the "License");
+6  you may not use this file except in compliance with the License.
+7  You may obtain a copy of the License at
+8
+9       http://www.apache.org/licenses/LICENSE-2.0
+10
+11  Unless required by applicable law or agreed to in writing, software
+12  distributed under the License is distributed on an "AS IS" BASIS,
+13  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  See the License for the specific language governing permissions and
+15  limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.people"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="30"
+23-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="30" />
+24-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml
+25
+26    <application
+26-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:21:5-112:19
+27        android:allowBackup="false"
+27-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:22:9-36
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.4.0-alpha01] /Users/anh.nguyen25/.gradle/caches/transforms-2/files-2.1/cb25f93d5ae10aa8022b2e5601b07acc/core-1.4.0-alpha01/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:extractNativeLibs="false"
+31        android:icon="@mipmap/ic_launcher"
+31-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:23:9-43
+32        android:label="@string/app_name"
+32-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:24:9-41
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:25:9-54
+34        android:supportsRtl="true"
+34-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:26:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.People" >
+36-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:27:9-44
+37
+38<!--             Our main entry point. -->
+39        <activity
+39-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:33:9-67:20
+40            android:name="com.example.android.people.MainActivity"
+40-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:34:13-67
+41            android:launchMode="singleTop" >
+41-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:35:13-43
+42
+43<!--                 This activity is the one that's shown on the launcher. -->
+44            <intent-filter>
+44-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:39:13-42:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:40:17-69
+45-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:40:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:41:17-77
+47-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:41:27-74
+48            </intent-filter>
+49            <!--
+50                This is used as the content URI of notifications. It navigates directly to the
+51                specified chat screen.
+52            -->
+53            <intent-filter>
+53-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:47:13-54:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:48:17-69
+54-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:48:25-66
+55
+56                <category android:name="android.intent.category.BROWSABLE" />
+56-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:49:17-78
+56-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:49:27-75
+57
+58                <data
+58-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:50:17-53:46
+59                    android:host="android.example.com"
+59-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:51:21-55
+60                    android:pathPattern="/chat/*"
+60-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:52:21-50
+61                    android:scheme="https" />
+61-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:53:21-43
+62            </intent-filter>
+63            <!--
+64                This opens the chat screen with the message field filled with the passed text.
+65                This is necessary for making our dynamic shortcuts appear in Direct Share.
+66            -->
+67            <intent-filter>
+67-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:59:13-63:29
+68                <action android:name="android.intent.action.SEND" />
+68-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:60:17-69
+68-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:60:25-66
+69
+70                <category android:name="android.intent.category.DEFAULT" />
+70-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:61:17-76
+70-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:61:27-73
+71
+72                <data android:mimeType="text/plain" />
+72-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:50:17-53:46
+72-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:62:23-52
+73            </intent-filter>
+74
+75            <meta-data
+75-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:64:13-66:53
+76                android:name="android.app.shortcuts"
+76-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:65:17-53
+77                android:resource="@xml/shortcuts" />
+77-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:66:17-50
+78        </activity>
+79
+80        <!--
+81            The dummy voice-call screen.
+82            This Activity can be launched from inside an expanded Bubble. Since this Activity is
+83            launched as a new task, it is opened as a full Activity, rather than stacked inside
+84            the expanded Bubble.
+85        -->
+86        <activity
+86-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:75:9-78:57
+87            android:name="com.example.android.people.VoiceCallActivity"
+87-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:76:13-72
+88            android:launchMode="singleInstance"
+88-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:77:13-48
+89            android:theme="@style/Theme.People.Voice" />
+89-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:78:13-54
+90
+91        <!--
+92            This Activity is the expanded Bubble. For that, this Activity has to have several
+93            attributes.
+94            - allowEmbedded="true": The expanded Bubble is embedded in the System UI.
+95            - resizeableActivity="true": The expanded Bubble is resized by the System UI.
+96            - documentLaunchMode="always": We show multiple bubbles in this sample. There will be
+97                                           multiple instances of this Activity.
+98        -->
+99        <activity
+99-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:88:9-101:20
+100            android:name="com.example.android.people.BubbleActivity"
+100-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:89:13-69
+101            android:allowEmbedded="true"
+101-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:90:13-41
+102            android:documentLaunchMode="always"
+102-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:91:13-48
+103            android:resizeableActivity="true" >
+103-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:92:13-46
+104            <intent-filter>
+104-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:47:13-54:29
+105                <action android:name="android.intent.action.VIEW" />
+105-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:48:17-69
+105-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:48:25-66
+106
+107                <category android:name="android.intent.category.BROWSABLE" />
+107-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:49:17-78
+107-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:49:27-75
+108
+109                <data
+109-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:50:17-53:46
+110                    android:host="android.example.com"
+110-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:51:21-55
+111                    android:pathPattern="/chat/*"
+111-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:52:21-50
+112                    android:scheme="https" />
+112-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:53:21-43
+113            </intent-filter>
+114        </activity>
+115
+116        <receiver android:name="com.example.android.people.ReplyReceiver" />
+116-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:103:9-104:71
+116-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:104:13-68
+117
+118        <provider
+118-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:106:9-110:54
+119            android:name="com.example.android.people.AssetFileProvider"
+119-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:107:13-72
+120            android:authorities="com.example.android.people"
+120-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:108:13-61
+121            android:exported="true" />
+121-->/Users/anh.nguyen25/Downloads/user-interface-samples-main/People/app/src/main/AndroidManifest.xml:109:13-36
+122    </application>
+123
+124</manifest>
