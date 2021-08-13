@@ -1,0 +1,20 @@
+com/example/android/people/databinding/MainFragmentBinding.java
+ com.example.android.people.databinding.MainFragmentBinding
+com/example/android/people/databinding/BubbleActivityBinding.java
+ com.example.android.people.databinding.BubbleActivityBinding
+com/example/android/people/BuildConfig.java
+ com.example.android.people.BuildConfig
+com/example/android/people/databinding/PhotoFragmentBinding.java
+ com.example.android.people.databinding.PhotoFragmentBinding
+com/example/android/people/databinding/ChatItemBinding.java
+ com.example.android.people.databinding.ChatItemBinding
+com/example/android/people/databinding/MessageItemBinding.java
+ com.example.android.people.databinding.MessageItemBinding
+com/example/android/people/databinding/MainActivityBinding.java
+ com.example.android.people.databinding.MainActivityBinding
+com/example/android/people/databinding/ChatFragmentBinding.java
+ com.example.android.people.databinding.ChatFragmentBinding
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
+com/example/android/people/databinding/VoiceCallActivityBinding.java
+ com.example.android.people.databinding.VoiceCallActivityBinding

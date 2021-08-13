@@ -1,0 +1,194 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  Copyright (C) 2019 The Android Open Source Project
+4
+5  Licensed under the Apache License, Version 2.0 (the "License");
+6  you may not use this file except in compliance with the License.
+7  You may obtain a copy of the License at
+8
+9       http://www.apache.org/licenses/LICENSE-2.0
+10
+11  Unless required by applicable law or agreed to in writing, software
+12  distributed under the License is distributed on an "AS IS" BASIS,
+13  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  See the License for the specific language governing permissions and
+15  limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.people"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="30"
+23-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="30" />
+24-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml
+25
+26    <uses-permission android:name="android.permission.INTERNET" />
+26-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:20:5-67
+26-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:20:22-64
+27
+28    <application
+28-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:21:5-114:19
+29        android:allowBackup="false"
+29-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:23:9-36
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.4.0-alpha01] /Users/anh.nguyen25/.gradle/caches/transforms-2/files-2.1/cb25f93d5ae10aa8022b2e5601b07acc/core-1.4.0-alpha01/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:icon="@mipmap/ic_launcher"
+33-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:24:9-43
+34        android:label="@string/app_name"
+34-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:25:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:26:9-54
+36        android:supportsRtl="true"
+36-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:27:9-35
+37        android:testOnly="true"
+38        android:theme="@style/Theme.People"
+38-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:28:9-44
+39        android:usesCleartextTraffic="true" >
+39-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:22:9-44
+40
+41<!--             Our main entry point. -->
+42        <activity
+42-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:34:9-68:20
+43            android:name="com.example.android.people.MainActivity"
+43-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:35:13-67
+44            android:launchMode="singleTop" >
+44-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:36:13-43
+45
+46<!--                 This activity is the one that's shown on the launcher. -->
+47            <intent-filter>
+47-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:40:13-43:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:41:17-69
+48-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:41:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:42:17-77
+50-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:42:27-74
+51            </intent-filter>
+52            <!--
+53                This is used as the content URI of notifications. It navigates directly to the
+54                specified chat screen.
+55            -->
+56            <intent-filter>
+56-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:48:13-55:29
+57                <action android:name="android.intent.action.VIEW" />
+57-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:49:17-69
+57-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:49:25-66
+58
+59                <category android:name="android.intent.category.BROWSABLE" />
+59-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:50:17-78
+59-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:50:27-75
+60
+61                <data
+61-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:51:17-54:46
+62                    android:host="android.example.com"
+62-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:52:21-55
+63                    android:pathPattern="/chat/*"
+63-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:53:21-50
+64                    android:scheme="https" />
+64-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:54:21-43
+65            </intent-filter>
+66            <!--
+67                This opens the chat screen with the message field filled with the passed text.
+68                This is necessary for making our dynamic shortcuts appear in Direct Share.
+69            -->
+70            <intent-filter>
+70-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:60:13-64:29
+71                <action android:name="android.intent.action.SEND" />
+71-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:61:17-69
+71-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:61:25-66
+72
+73                <category android:name="android.intent.category.DEFAULT" />
+73-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:62:17-76
+73-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:62:27-73
+74
+75                <data android:mimeType="text/plain" />
+75-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:51:17-54:46
+75-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:63:23-52
+76            </intent-filter>
+77
+78            <meta-data
+78-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:65:13-67:53
+79                android:name="android.app.shortcuts"
+79-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:66:17-53
+80                android:resource="@xml/shortcuts" />
+80-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:67:17-50
+81        </activity>
+82
+83        <!--
+84            The dummy voice-call screen.
+85            This Activity can be launched from inside an expanded Bubble. Since this Activity is
+86            launched as a new task, it is opened as a full Activity, rather than stacked inside
+87            the expanded Bubble.
+88        -->
+89        <activity
+89-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:76:9-79:57
+90            android:name="com.example.android.people.VoiceCallActivity"
+90-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:77:13-72
+91            android:launchMode="singleInstance"
+91-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:78:13-48
+92            android:theme="@style/Theme.People.Voice" />
+92-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:79:13-54
+93
+94        <!--
+95            This Activity is the expanded Bubble. For that, this Activity has to have several
+96            attributes.
+97            - allowEmbedded="true": The expanded Bubble is embedded in the System UI.
+98            - resizeableActivity="true": The expanded Bubble is resized by the System UI.
+99            - documentLaunchMode="always": We show multiple bubbles in this sample. There will be
+100                                           multiple instances of this Activity.
+101        -->
+102        <activity
+102-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:89:9-102:20
+103            android:name="com.example.android.people.BubbleActivity"
+103-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:90:13-69
+104            android:allowEmbedded="true"
+104-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:91:13-41
+105            android:documentLaunchMode="always"
+105-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:92:13-48
+106            android:resizeableActivity="true" >
+106-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:93:13-46
+107            <intent-filter>
+107-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:48:13-55:29
+108                <action android:name="android.intent.action.VIEW" />
+108-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:49:17-69
+108-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:49:25-66
+109
+110                <category android:name="android.intent.category.BROWSABLE" />
+110-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:50:17-78
+110-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:50:27-75
+111
+112                <data
+112-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:51:17-54:46
+113                    android:host="android.example.com"
+113-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:52:21-55
+114                    android:pathPattern="/chat/*"
+114-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:53:21-50
+115                    android:scheme="https" />
+115-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:54:21-43
+116            </intent-filter>
+117        </activity>
+118        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+118-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:103:9-86
+118-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:103:19-83
+119
+120        <receiver android:name="com.example.android.people.ReplyReceiver" />
+120-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:105:9-106:71
+120-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:106:13-68
+121
+122        <provider
+122-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:108:9-112:54
+123            android:name="com.example.android.people.AssetFileProvider"
+123-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:109:13-72
+124            android:authorities="com.example.android.people"
+124-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:110:13-61
+125            android:exported="true" />
+125-->/Users/anh.nguyen25/Desktop/People/android/app/src/main/AndroidManifest.xml:111:13-36
+126    </application>
+127
+128</manifest>
