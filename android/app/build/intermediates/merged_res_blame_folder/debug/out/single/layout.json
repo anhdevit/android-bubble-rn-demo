@@ -1,34 +1,34 @@
 [
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_fragment.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/main_fragment.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/photo_fragment.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/photo_fragment.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bubble_activity.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/bubble_activity.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_fragment.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/main_fragment.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/voice_call_activity.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/voice_call_activity.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/main_activity.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/main_activity.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/main_activity.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/chat_fragment.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/chat_fragment.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/chat_fragment.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/chat_fragment.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bubble_activity.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/bubble_activity.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/photo_fragment.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/photo_fragment.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/message_item.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/message_item.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/chat_item.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/chat_item.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/chat_item.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/chat_item.xml"
     },
     {
-        "merged": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/message_item.xml",
-        "source": "/Users/anh.nguyen25/Desktop/People/android/app/src/main/res/layout/message_item.xml"
+        "merged": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/voice_call_activity.xml",
+        "source": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/src/main/res/layout/voice_call_activity.xml"
     }
 ]

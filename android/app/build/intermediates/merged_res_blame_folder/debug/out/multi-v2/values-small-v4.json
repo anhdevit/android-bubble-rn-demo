@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
+            "outputFile": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml",
             "map": [
                 {
                     "source": "/Users/anh.nguyen25/.gradle/caches/transforms-2/files-2.1/35a88c2c7e3830e7bf49b2b7beae0f23/material-1.1.0/res/values-small-v4/values-small-v4.xml",

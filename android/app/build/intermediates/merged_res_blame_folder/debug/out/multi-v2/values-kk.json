@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/anh.nguyen25/Desktop/People/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
+            "outputFile": "/Users/anh.nguyen25/Desktop/DemoIntergrationBubbleWithReactNative/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk/values-kk.xml",
             "map": [
                 {
                     "source": "/Users/anh.nguyen25/.gradle/caches/transforms-2/files-2.1/cb25f93d5ae10aa8022b2e5601b07acc/core-1.4.0-alpha01/res/values-kk/values-kk.xml",
